@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Smart Blackboard Cleaner</title>
+    <!-- CONNECTING CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MAIN HEADER -->
+    <header class="header">
+        <div>
+            <h1>Smart Blackboard Cleaner</h1>
+            <p>Automatic Blackboard Cleaning Robot</p>
+        </div>
+        <div class="system-status">
+            <span class="status-dot"></span>
+            <span id="robotStatus">System Ready</span>
+        </div>
+    </header>
+    <!-- MAIN DASHBOARD -->
+    <main class="dashboard">
+        <!-- 1. ROBOT MONITORING -->
+        <section class="monitor-section">
+            <h2>Robot Monitoring</h2>
+            <div class="monitor-cards">
+                <div class="card">
+                    <h3>Robot Status</h3>
+                    <p id="statusValue">Ready</p>
+                </div>
+                <div class="card">
+                    <h3>Cleaning Progress</h3>
+                    <p id="progressValue">0%</p>
+                </div>
+                <div class="card">
+                    <h3>Wiper Position</h3>
+                    <p id="positionValue">Left</p>
+                </div>
+            </div>
+        </section>
+        <!-- 2. BLACKBOARD SIMULATION -->
+        <section class="board-section">
+            <h2>Blackboard Simulation</h2>
+            <div class="blackboard" id="blackboard">
+                <h3>CLASSROOM BLACKBOARD</h3>
+                <div class="wiper" id="wiper">
+                    CLEANING PAD
+                </div>
+            </div>
+        </section>
+        <!-- 3. ROBOT CONTROLS -->
+        <section class="control-section">
+            <h2>Robot Controls</h2>
+            <div class="control-buttons">
+                <button id="leftBtn">
+                    ← Move Left
+                </button>
+                <button id="startBtn">
+                    ▶ Start Cleaning
+                </button>
+                <button id="pauseBtn">
+                    ⏸ Pause
+                </button>
+                <button id="rightBtn">
+                    Move Right →
+                </button>
+                <button id="stopBtn">
+                    ■ Stop
+                </button>
+                <button id="resetBtn">
+                    ↻ Reset
+                </button>
+            </div>
+        </section>
+        <!-- 4. LIMIT SWITCH MONITORING -->
+        <section class="switch-section">
+            <h2>Limit Switch Monitoring</h2>
+            <div class="switch-cards">
+                <div class="card">
+                    <h3>Left Limit Switch</h3>
+                    <p id="leftSwitch">Inactive</p>
+                </div>
+                <div class="card">
+                    <h3>Right Limit Switch</h3>
+                    <p id="rightSwitch">Inactive</p>
+                </div>
+            </div>
+        </section>
+        <!-- 5. CLEANING HISTORY -->
+        <section class="history-section">
+            <h2>Cleaning History</h2>
+            <ul id="historyList">
+                <li>No cleaning operations yet.</li>
+            </ul>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            Smart Blackboard Cleaner |
+            Software Simulation Prototype
+        </p>
+    </footer>
+    <!-- CONNECTING JS -->
+    <script src="script.js"></script>
+</body>
+</html>
